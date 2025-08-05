@@ -9,10 +9,10 @@
 </head>
 <body class="font-sans text-gray-800">
   <!-- Header -->
-  <header class="bg-blue-900 text-white p-4">
+  <header class="bg-blue-300 text-blue p-4 bg-opacity-60">
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Kenya Marine Spatial Plan</h1>
-      <nav class="space-x-4 text-sm">
+      <img src="img/logos.png " width="200"/>
+      <nav class="space-x-4 text-sm text-blue-900">
         <a href="#" class="hover:underline">HOME</a>
         <a href="#" class="hover:underline">ABOUT MSP</a>
         <a href="#" class="hover:underline">MSP PROCESS</a>
@@ -24,20 +24,21 @@
   </header>
 
   <!-- Hero Content with Slider and Text -->
-  <section class="relative py-10 bg-cover bg-center" style="background-image: url('img/beautiful-luxury-outdoor-swimming-pool-hotel-resort.jpg');">
-    <div class="container mx-auto flex flex-col md:flex-row items-center gap-8 bg-blue-100 bg-opacity-80 p-6 rounded">
+  <section class="relative py-20 bg-cover bg-center" style="background-image: url('img/beautiful-blue-sea-sky.jpg');">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-8 bg-blue-100 bg-opacity-0 p-6 rounded">
       <!-- Text Content -->
-      <div class="md:w-1/2 text-center md:text-left">
-        <h2 class="text-3xl font-bold mb-4">ENHANCING SUSTAINABLE HARNESSING OF THE BLUE ECONOMY</h2>
+      <div class="md:w-1/2 text-center md:text-left text-white">
+        <h2 class="text-3xl font-bold mb-4">Kenya Marine Spatial Plan</h2>
+        <p class="text-xl mb-2">Enhancing sustainable harnessing of the blue economy</p>
         <p class="text-xl mb-2">For Accelerated Social-Economic Development</p>
-        <div class="mt-4 text-blue-700 font-semibold">Call for submissions on intent to plan</div>
+        <p class="text-xl mb-2">Call for submissions on intent to plan</p>
       </div>
       <!-- Image Slider -->
       <div class="md:w-1/2" x-data="{
         active: 0,
         images: [
-          'img/environmentally-friendly-multiethnic-women-pick-up-plastic-rubber-products.jpeg',
           'img/fishery-boat-seascape-nautical-vessel-nature.jpeg',
+          'img/maldives-island.jpg',
           'img/hands-trees-growing-seedlings_1150-44312.jpeg',
         ],
         init() {
@@ -62,7 +63,7 @@
   </section>
 
   <!-- Key Sectors -->
-  <section class="container mx-auto py-10">
+  <section class="relative py-20 bg-cover bg-center" style="background-image: url('img/beautiful-beach-view-koh-chang-island-seascape-.jpg');">
     <h3 class="text-xl font-bold text-center mb-6">Key MSP Sectors</h3>
     <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-blue-800">
       <a href="#" class="hover:underline">Fisheries</a>
@@ -75,23 +76,23 @@
   </section>
 
   <!-- Events Section -->
-  <section class="bg-gray-100 py-10">
+  <section class="relative py-20 bg-cover bg-center" style="background-image: url('img/beautiful-beach-view-koh-chang-island-seascape-.jpg');">
     <div class="container mx-auto">
       <h3 class="text-xl font-bold text-center mb-6">Upcoming Events</h3>
       <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white p-4 shadow">
+        <div class="bg-blue-300 p-4 shadow">
           <img src="img/photorealistic-wild-tuna-day-celebration_23-2151307949.jpeg" alt="Mangrove planting" class="mb-3 w-full h-40 object-cover">
           <p class="text-sm text-gray-500 mb-2">14TH Dec.</p>
           <h4 class="font-bold mb-1">Mangrove planting campaign in Shimoni</h4>
           <p class="text-sm">Ondum aturest inatus, nosto audesil lemurei corditem...</p>
         </div>
-        <div class="bg-white p-4 shadow">
+        <div class="bg-blue-300 p-4 shadow">
           <img src="img/ocean-pollution-with-oil-stains-water-surface-with-sea-animals-beach-flat-illustration_1284-62758.jpeg" alt="Fishing event" class="mb-3 w-full h-40 object-cover">
           <p class="text-sm text-gray-500 mb-2">18TH Dec.</p>
           <h4 class="font-bold mb-1">Signing of Fishing Accord</h4>
           <p class="text-sm">Rem ignat, unum omnontes corditem locus, nonem aus...</p>
         </div>
-        <div class="bg-white p-4 shadow">
+        <div class="bg-blue-300 p-4 shadow">
           <img src="img/vertical-closeup-shot-stripped-exotic-tropical-fish-swimming-deep-underwater.jpg" alt="Marine conference" class="mb-3 w-full h-40 object-cover">
           <p class="text-sm text-gray-500 mb-2">20TH Dec.</p>
           <h4 class="font-bold mb-1">Sixth International Marine Spatial Event</h4>
@@ -102,7 +103,7 @@
   </section>
 
   <!-- News Updates -->
-  <section class="container mx-auto py-10">
+  <section class="relative py-20 bg-cover bg-center" style="background-image: url('img/beautiful-beach-view-koh-chang-island-seascape-.jpg');">
     <h3 class="text-xl font-bold text-center mb-6">News Updates</h3>
     <ul class="list-disc list-inside text-sm space-y-2">
       <li>New Co-Management plans to promote sustainable fisheries</li>
@@ -116,7 +117,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white text-sm py-8">
+  <footer class="bg-blue-400 text-white text-sm py-8">
     <div class="container mx-auto grid md:grid-cols-3 gap-6">
       <div>
         <h4 class="font-semibold mb-2">Related Links</h4>
