@@ -27,12 +27,13 @@ body, html {
   position: relative;
   top: -41px; /* Move it upward to overlap the social bar */
   z-index: 3; /* Make sure it's above the social-icons */
+  width: 29.3%
 }
 
 .logo-box img {
   display: block;
   margin: 0 auto;       /* Horizontally center it */
-  height: 80px;         /* Adjust this value to enlarge/shrink */
+  height: 0 auto;       /* Horizontally center it */         /* control logo size*/
   object-fit: contain;  /* Keep aspect ratio */          
   padding: 0; /* Ensure no extra space */
 }
@@ -123,6 +124,12 @@ body, html {
   z-index: 1;
 }
 
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
 .left-column h1 {
   font-size: 40px;
   margin-bottom: 20px;
@@ -135,25 +142,29 @@ body, html {
   margin-bottom: 20px;
 }
 
+
 .read-more-btn {
-  display: inline-block;
+  display: inline-block;   /* shrink to text size */
   background: white;
   color: #0077aa;
   font-weight: bold;
   padding: 8px 12px;
   text-decoration: none;
   margin-bottom: 30px;
+  align-self: flex-start;  /* prevents stretching in flexbox */
+  border-radius: 4px;      /* optional: nicer look */
 }
 
 .announcement {
+  margin-top: auto;       /* pushes announcements to the bottom of the column */
   border-top: 3px solid white;
   padding-top: 20px;
 }
 
 .announcement h3 {
-  font-weight: bold;
+  margin: 0;              /* prevent browser margin quirks */
   font-size: 18px;
-  margin-bottom: 8px;
+  font-weight: bold;
 }
 
 .right-column {
@@ -484,4 +495,85 @@ body, html {
   width: 100%;
   height: auto;
   border-radius: 4px;
+}
+/* Layout for white box with side image stacks */
+.white-hero-box {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-box-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+}
+
+
+
+/* Each column balances width 
+.image-column {
+  flex: 1;                        
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+*/
+
+.image-column img {
+  width: 500px;                     /* fit within column */              /* prevents oversized squares */
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Center text block with balanced width */
+.white-box-content {
+  flex: 2;                        /* text gets more space than images */
+  text-align: center;
+  color: #333;
+  max-width: none;                /* no artificial squeeze */
+  padding: 20px;   /* 🔹 Add this line */
+
+}
+
+.white-box-content h2 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.white-box-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
+/* Center text block with balanced width */
+.white-box-content {
+  flex: 2;                        /* text gets more space than images */
+  text-align: center;
+  color: #333;
+  max-width: none;                /* no artificial squeeze */
+}
+
+.white-box-content h2 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.white-box-content p {
+  font-size: 16px;
+  line-height: 1.6;
 }
