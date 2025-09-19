@@ -1,9 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Kenya Marine Spatial Plan</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* 🔹 Dropdown Menu Styling */
+    .nav-links li {
+      position: relative;
+    }
+    .nav-links li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      min-width: 180px;
+      z-index: 1000;
+    }
+    .nav-links li ul li {
+      width: 100%;
+    }
+    .nav-links li ul li a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-links li ul li a:hover {
+      background: #0077cc;
+      color: #fff;
+    }
+    .nav-links li:hover > ul {
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -24,16 +61,49 @@
       <!-- Navigation (right) -->
       <nav class="nav-bar">
         <ul class="nav-links">
-         <li><a href="#">HOME</a></li>
-         <li><a href="#">ABOUT MSP</a></li>
-         <li><a href="#">MSP PROCESS</a></li>
-         <li><a href="#">UPDATES</a></li>
-         <li><a href="#">RESOURCES MEDIA</a></li>
-         <li><a href="#">DATA PORTAL</a></li>
-         <li><a href="#">CONTACTS</a></li>
-         </ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="biodiversity.html">ABOUT MSP</a>
+            <ul>
+              <li><a href="#">Background</a></li>
+              <li><a href="#">Governance Framework</a></li>
+              <li><a href="#">Purpose,Goals & Objectives</a></li>
+              <li><a href="#">Benefits</a></li>
+              <li><a href="#">Planning Area</a></li>
+              <li><a href="#">Funding</a></li>
+            </ul>
+          </li>
+          <li><a href="cultural-heritage.html">MEDIA CENTRE</a>
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </li>
+          <li><a href="resources.html">RESOURCES CENTRE</a>
+            <ul>
+              <li><a href="#">Publications</a></li>
+              <li><a href="#">Reports</a></li>
+              <li><a href="#">News letters</a></li>
+              <li><a href="#">Trainings</a></li>
+              <li><a href="MSP-Factsheets.html">MSP Factsheets</a></li>
+            </ul>
+          </li>
+          <li><a href="data-portal.html">DATA PORTAL</a></li>
+          <li><a href="Tourism-sports-and-recreation.html">FEEDBACK</a>
+            <ul>
+              <li><a href="#">General Feedback</a></li>
+              <li><a href="#">Public Submissions</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html">CONTACT US</a>
+            <ul>
+              <li><a href="#">Offices</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+          </li>
+        </ul>
       </nav>
-      </div>
+    </div>
   </header>
 
   <section class="hero">
